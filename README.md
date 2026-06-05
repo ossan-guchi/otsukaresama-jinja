@@ -12,3 +12,4 @@ npm run dev
 ## 公開方法
 
 GitHubへアップロードし、VercelでImportしてDeployします。
+"# otsukaresama-jinja"  
