@@ -272,15 +272,26 @@ export default function OtsukaresamaJinjaApp() {
           >
             <Card className="rounded-3xl border border-pink-100 bg-white/80 shadow-xl">
               <CardContent className="p-6 text-center">
-                <div className="mb-3 text-6xl">👩‍🦰</div>
+                <img
+                  src="/miko.png"
+                  alt="巫女さん"
+                  className="mx-auto mb-3 h-56 rounded-3xl shadow-lg"
+                />
                 <h2 className="mb-2 text-xl font-bold text-rose-900">巫女さん</h2>
+                <p className="mb-3 text-pink-600 font-semibold">
+                  🌸 おつかれさまでした 🌸
+                </p>
                 <p className="text-lg leading-8 text-rose-800">{mikoMessage}</p>
               </CardContent>
             </Card>
 
             <Card className="rounded-3xl border border-pink-100 bg-gradient-to-br from-white to-pink-100 shadow-xl">
               <CardContent className="p-6 text-center">
-                <div className="mb-3 text-5xl">🎴</div>
+                <img
+                  src="/miko.png"
+                  alt="巫女さん"
+                  className="mx-auto mb-3 h-56 rounded-3xl shadow-lg"
+                />
                 <h2 className="mb-2 text-xl font-bold text-rose-900">今日のおみくじ</h2>
                 <p className="mb-3 text-4xl font-black text-pink-600">{fortune.rank}</p>
                 <p className="text-lg leading-8 text-rose-900">{fortune.message}</p>
