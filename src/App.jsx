@@ -49,9 +49,8 @@ export default function OtsukaresamaJinjaApp() {
     "明日のあなたに任せてもいいことは、今日は手放しましょう。",
   ];
 
-  const fortunes = ```jsx
   const fortunes = [
-   { rank: "大吉", message: "今日は自分を甘やかしてOK。好きなものを買って帰りましょう。", item: "コンビニスイーツ" },
+{ rank: "大吉", message: "今日は自分を甘やかしてOK。好きなものを買って帰りましょう。", item: "コンビニスイーツ" },
    { rank: "大吉", message: "頑張りすぎた分、今日は休む権利があります。", item: "好きなカフェ" },
    { rank: "大吉", message: "あなたの頑張りは、ちゃんと積み重なっています。", item: "新しいハンドクリーム" },
    { rank: "大吉", message: "今日は小さな幸せに気づける日です。", item: "花の写真" },
@@ -111,8 +110,6 @@ export default function OtsukaresamaJinjaApp() {
    { rank: "中吉", message: "今日は人に合わせすぎないことが開運です。", item: "ひとり時間" },
    { rank: "小吉", message: "ちゃんと休むことも、大人の大事な仕事です。", item: "休憩時間" }
   ];
-  ```
-
 
   const cleanText = (value) => {
     return value.replace(/<[^>]*>?/gm, "").replace(/[{}$]/g, "").slice(0, 500);
