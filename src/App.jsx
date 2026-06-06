@@ -351,7 +351,23 @@ export default function OtsukaresamaJinjaApp() {
                 <p className="mt-4 rounded-2xl bg-white/70 px-4 py-3 text-sm font-semibold text-rose-700">
                   ラッキーアイテム：{fortune.item}
                 </p>
-              </CardContent>
+                <a
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                    `🌸おつかれさま神社🌸
+                    
+               今日のおみくじ：${fortune.rank}
+
+               ${fortune.message}
+
+               https://otsukaresama-jinja.vercel.app`
+                 )}`}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="mt-4 inline-block rounded-2xl bg-sky-500 px-6 py-3 font-bold text-white hover:bg-sky-600"
+               >
+                 📱 Xで結果を共有
+              </a>
+            </CardContent>
             </Card>
           </motion.div>
         )}
